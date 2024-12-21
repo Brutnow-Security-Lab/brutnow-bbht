@@ -125,3 +125,116 @@ Welcome to the Brutnow Security Lab's Penetration Testing Toolkit. This reposito
 3. **King Phisher**
 
 [King Phisher](https://github.com/rsmusllp/king-phisher) - A tool for testing and promoting user awareness by simulating real-world.
+
+To make the script easier to understand and use in a text-based tutorial, I’ll walk you through the process of using it, including saving the script and running it on your system.
+
+Here’s how you can do it step-by-step:
+
+### Step 1: Save the Script
+
+1. **Open a Text Editor**: Open a text editor of your choice. You can use editors like `nano`, `vim`, or a graphical text editor.
+   - If you’re using the terminal, you can use `nano`:
+     ```bash
+     nano install_toolkit.sh
+     ```
+   - If you’re using a graphical text editor, just create a new file and name it `install_toolkit.sh`.
+
+2. **Copy the Script**: Copy the entire shell script I provided in the previous response (the one with the installation of tools like `Nmap`, `Wireshark`, etc.).
+
+3. **Paste the Script**: Paste the script into your text editor. After pasting, save the file.
+
+4. **Close the Text Editor**: If you're using `nano`, press `CTRL+X`, then press `Y` to confirm saving, and hit `Enter`.
+
+### Step 2: Make the Script Executable
+
+1. **Make the Script Executable**: Open a terminal and navigate to the directory where the script is saved (use `cd` to change the directory).
+
+   Example:
+   ```bash
+   cd /path/to/script/directory
+   ```
+
+2. **Change Permissions**: Now, make the script executable by running the following command:
+   ```bash
+   chmod +x install_toolkit.sh
+   ```
+
+### Step 3: Run the Script
+
+1. **Run the Script**: Once the script is executable, you can run it by typing:
+   ```bash
+   ./install_toolkit.sh
+   ```
+
+2. **Follow the Prompts**: The script will automatically begin installing the necessary tools and dependencies. It will display various messages, including:
+   - Installing dependencies like **apt-fast**, **python3**, **pip**, etc.
+   - Installing tools like **Nmap**, **Wireshark**, **Burp Suite**, **Nikto**, **Masscan**, **ZAPROXY**, **SQLMap**, and others.
+   - It may ask for your **sudo password** during some installation steps.
+
+   Let the script finish running. Depending on your internet speed and system performance, this may take some time.
+
+### Step 4: Apply the Changes
+
+1. **Restart the Terminal**: Once the script finishes, either restart your terminal or use the following command to apply the changes:
+   ```bash
+   source ~/.bashrc
+   ```
+
+   This will load the new aliases and environment variables into your current terminal session.
+
+2. **Verify the Installations**: To ensure everything is installed correctly, you can run a few of the installed tools directly:
+   ```bash
+   nmap --version
+   sqlmap --version
+   masscan --version
+   ```
+
+### Step 5: Use the Installed Tools
+
+- You can now use the installed tools directly from the terminal by calling their names, e.g., `nmap`, `sqlmap`, `burpsuite`, etc.
+  
+- If the tools require a graphical interface (like **Wireshark** or **Burp Suite**), you can simply run them from the terminal by typing:
+  ```bash
+  wireshark
+  burpsuite
+  ```
+
+### Step 6: Troubleshooting
+
+- If some tools don't seem to work, make sure the script didn’t encounter any errors during the installation process. Check the terminal output for any error messages.
+- If needed, rerun the script or manually install missing dependencies.
+
+### Recap of Key Commands:
+
+1. **Save the Script**:
+   - Open a text editor and paste the script.
+   
+2. **Make the Script Executable**:
+   ```bash
+   chmod +x install_toolkit.sh
+   ```
+
+3. **Run the Script**:
+   ```bash
+   ./install_toolkit.sh
+   ```
+
+4. **Apply Environment Changes**:
+   ```bash
+   source ~/.bashrc
+   ```
+
+5. **Test the Tools**:
+   ```bash
+   nmap --version
+   sqlmap --version
+   ```
+
+---
+
+### Final Notes:
+
+- This script is intended for use in **Linux environments** (specifically Debian-based systems like **Ubuntu** and **Kali Linux**). If you are using a different distribution, you may need to modify some installation commands.
+- All tools installed by the script are for **educational purposes** only. Please ensure you have proper authorization before testing or scanning any network or system.
+
+Enjoy using your **BrutNow Penetration Testing Toolkit**!
