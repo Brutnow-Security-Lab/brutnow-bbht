@@ -192,4 +192,4 @@ Enjoy using your Brutnow Penetration Testing Toolkit!
 
     Twitter: @BrutnowLab
     Discord: Brutnow Community
-    Email: support@brutnow.com
+    Email: supports@brutnow.com
